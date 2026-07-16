@@ -1,13 +1,15 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
 body {
-  width: 1100px;
-  margin: 0 auto;
-  font-family: Raleway, sans-serif;
+    width: 1100px;
+    height: 3028px;
+    margin: 92px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    /* border: 1px solid #000; */
 }
 
 h1,
@@ -31,8 +33,4 @@ a {
 
 img {
   width: 100%;
-}
-
-button {
-  font: inherit;
 }

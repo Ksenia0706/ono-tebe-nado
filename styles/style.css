@@ -1,17 +1,16 @@
-/* разделилил хэдер на 3 колонки, отцентровали */
 .header {
+    height: 293px;
     display: grid;
     grid-template-columns: 477px auto 477px;
     align-items: center;
-    margin-bottom: 96px;
+    border: 1px solid #585ae9;
 }
-
 
 .header__menu {
     padding-left: 51px;
 }
 
-/* работа с навигацией */
+
 .header__links-list {
     display: flex;
     align-items: flex-start;
@@ -19,56 +18,30 @@
     list-style: circle;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
 }
 
-/* убрали точку у "главная" */
+
 .header__menu-item_no-bullet { 
     list-style: none;
 } 
-
-.header__links-list-item {
-
-}
 
 .logo-image {
     justify-self: center;
 } 
 
-/* изменили размер фото, ранее оно было больше на всю страницу */
-.header__logo-link {
-  display: block;
-  width: 148px;
-  height: 105px;
-}
-
 .header__address {
-    justify-self: center
+    justify-self: center;
+    margin-left: 105px;
 }
 
 .address {
   display: grid;
   grid-template-rows: 3;
   font-style: normal;
-}
-
-.adress__link {
-
-}
-
-.mail__link {
-
-}
-
-.content-section {
-    margin-bottom: 179px;
-}
-
-.content-image {
-
-}
-
-.section-image {
-    
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .cover {
@@ -89,7 +62,7 @@
 
 .cover__title {
     width: 100%;
-    padding: 165px 50px 0 50px;
+    padding: 165px 20px 0 50px;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -107,18 +80,21 @@
 
 .aligned-text__center {
     text-align: center;
+    margin-top: 9px;
+    padding-right: 55px;
 }
 
 .aligned-text__right {
     text-align: right;
+    margin-top: 3px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 40px;
+    letter-spacing: 30%;
 }
 
 .no-letter-spacing {
-    letter-spacing: 0;
+    letter-spacing: 60%;
 }
 
 .cover__description {  
@@ -135,25 +111,35 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    letter-spacing: 1px;
     line-height: 28px;
+    padding-left: 25px;
+    margin-top: 2px;
 }
 
 .bet-button {
-    padding: 0 50px 0 50px;
+    margin-top: 5px;
+    padding: 10px 31px 14px 31px; 
     background: transparent;
     color: white;
     border: 1px solid #fff;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    padding: 16px 40px 16px 31px;
     font-size: 22px;
 }
 
+.no-letter-spacing_auction {
+    letter-spacing: 120%;
+}
+
+
+.no-letter-spacing_nobody {
+    letter-spacing: 27%;
+}
+
 .lots {
-    height: 692px;
+
     /* background-color: rgb(223, 223, 223); */
-    padding: 10px 24px 0 24px;
+    padding: 0 24px 0 24px;
 }
 
 .lots__heading {
@@ -162,18 +148,19 @@
     text-transform: uppercase;
     font-size: 40px;
     padding-left: 40px;
-    padding-bottom: 36px;
+    padding-bottom: 15px;
 }
 
 .lots__card-list {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .lots__card-list-item {
     height: 563px;
     width: 334px;
-    padding: 56px 40px 48px 40px;
+    padding: 50px 40px 48px 40px;
     border: 1px solid #000000;
     display: flex;
     flex-direction: column;
@@ -248,13 +235,12 @@
 
 }
 
-
 .see-more {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-decoration: underline;
-    padding-top: 36px;
+    padding-top: 33px;
     padding-left: 40px;
 }
 
@@ -262,23 +248,24 @@
     height: 560px;
     /* background-color: rgb(223, 223, 223); */
     display: flex;
+    padding-top: 171px;
     
 }
 
 .about__logo-image {
-    height: 250px;
-    width: 250px;
-    padding-left: 47px;
-    padding-top: 35px;
+    height: 310px;
+    width: 310px;
+    padding-left: 70px;
+    padding-bottom: 51px;
 }
 
 .about__auction {
-    padding-left: 72px;
+    padding-left: 73px;
     padding-top: 110px;
 }
 
 .about__auction-heading {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -291,23 +278,25 @@
 }
 
 .text-padding {
-    padding-top: 29px;
-    word-spacing: 1%;
+    padding-top: 27px;
+    font-size: 20px;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
+    padding-top: 362px;
 }
 
 .footer__address {
     padding-left: 50px;
-
 }
 
 .footer__menu {
     display: flex;
     justify-content: center;
+    font-size: 18px;
+    padding-left: 40px;
 }
 
 .footer__header__links-list {
@@ -322,6 +311,7 @@
 .footer__link {
     display: flex;
     gap: 48px;
+    padding-right: 50px;
 }
 
 .footer__link-Yotube-Vk-Pinterest {
@@ -336,22 +326,6 @@
 .footer__header__menu-item {
     list-style: none;
 }
-
-
-
-
-
-
-    
-    
-    
-
-
-
-
-
-
-
 
 
 
